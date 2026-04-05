@@ -1,0 +1,78 @@
+name: 🐛 Bug Report
+description: Report an issue with a demo, code sample, or documentation
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please provide as much detail as possible.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which area does this bug relate to?
+      options:
+        - Power Apps Demo
+        - Power Automate Demo
+        - Power BI Demo
+        - Copilot Studio Demo
+        - Agentic AI Sample
+        - Code Sample
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please describe the issue you encountered
+      placeholder: Tell us what went wrong
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe the expected outcome
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide details about your environment
+      placeholder: |
+        - Power Platform environment type (Production/Trial/Developer)
+        - Browser (if applicable)
+        - Power Apps version
+        - Any other relevant details
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or error messages
+      placeholder: Add screenshots, logs, or additional information
+    validations:
+      required: false

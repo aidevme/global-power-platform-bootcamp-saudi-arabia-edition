@@ -1,0 +1,78 @@
+name: 🎯 Demo or Sample Request
+description: Request a new demo, code sample, or example
+title: "[Request]: "
+labels: ["enhancement", "demo-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a demo or code sample? Let us know what you'd like to see!
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request Type
+      description: What kind of content are you requesting?
+      options:
+        - Power Apps Demo
+        - Power Automate Demo
+        - Power BI Demo
+        - Copilot Studio Demo
+        - Agentic AI Sample
+        - Integration Example
+        - Architecture Pattern
+        - Best Practice Guide
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the demo or sample you'd like to see
+      placeholder: What would this demo or sample demonstrate?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Business Use Case
+      description: What real-world scenario would this address?
+      placeholder: Describe the business problem or scenario this would solve
+    validations:
+      required: false
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Key Features or Components
+      description: What specific features or components should be included?
+      placeholder: |
+        - Feature 1
+        - Feature 2
+        - Integration with...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity Level
+      description: What level of complexity are you looking for?
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that would be helpful
+      placeholder: Links, examples, or additional details
+    validations:
+      required: false

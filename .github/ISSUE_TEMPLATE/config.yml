@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🌐 AIDevMe GitHub Profile
+    url: https://github.com/aidevme
+    about: Check out more Power Platform resources and repositories
+  - name: 📖 Microsoft Power Platform Documentation
+    url: https://learn.microsoft.com/power-platform/
+    about: Official Microsoft Power Platform documentation
+  - name: 🤖 Microsoft Copilot Studio Documentation
+    url: https://learn.microsoft.com/microsoft-copilot-studio/
+    about: Official Microsoft Copilot Studio documentation
+  - name: 💬 Power Platform Community
+    url: https://powerusers.microsoft.com/
+    about: Join the Power Platform community forums

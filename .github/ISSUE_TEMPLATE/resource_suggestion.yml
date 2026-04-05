@@ -1,0 +1,71 @@
+name: 📚 Resource or Improvement Suggestion
+description: Suggest improvements to existing materials or additional resources
+title: "[Improvement]: "
+labels: ["enhancement", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve! Suggest enhancements to demos, documentation, or additional resources.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Suggestion Type
+      description: What kind of improvement are you suggesting?
+      options:
+        - Documentation Improvement
+        - Code Enhancement
+        - Additional Resource Link
+        - Demo Enhancement
+        - Repository Organization
+        - New Topic Coverage
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current State
+      description: What currently exists (if applicable)?
+      placeholder: Describe what currently exists or what you're referring to
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your Suggestion
+      description: What would you like to see improved or added?
+      placeholder: Describe your suggestion in detail
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected Benefit
+      description: How would this improvement help users?
+      placeholder: What value would this add?
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Suggested Resources
+      description: Any links or resources to support your suggestion?
+      placeholder: |
+        - [Resource 1](url)
+        - [Resource 2](url)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Are you willing to help?
+      options:
+        - label: I'd be willing to submit a PR for this improvement

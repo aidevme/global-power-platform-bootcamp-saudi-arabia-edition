@@ -1,0 +1,60 @@
+name: ❓ Question
+description: Ask a question about the bootcamp materials or Power Platform concepts
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about the bootcamp materials or Power Platform concepts? Ask away!
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Power Platform Architecture
+        - Power Apps Development
+        - Power Automate Workflows
+        - Power BI Integration
+        - Dataverse
+        - Copilot Studio
+        - Agentic AI Patterns
+        - Demo Clarification
+        - Code Sample Usage
+        - Best Practices
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Ask your question here
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Provide any relevant context or what you've already tried
+      placeholder: |
+        - What are you trying to accomplish?
+        - What have you already tried?
+        - Any relevant links or resources
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: research
+    attributes:
+      label: Research Done
+      description: Have you checked existing resources?
+      options:
+        - label: I have reviewed the demo materials
+        - label: I have checked existing issues
+        - label: I have reviewed Microsoft documentation
